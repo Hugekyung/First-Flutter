@@ -13,17 +13,40 @@ class App extends StatelessWidget {
     // TODO: 여기서 선언된 App은 root라서 해당 앱의 기본 UI 같은 설정들을 반드시 정해줘야 한다.
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('MENU BAR'),
-          ),
-          body: Center(
-            child: Text('Hi My App !'),
-          ),
-          backgroundColor: Colors.amber[50]
-          // bottomNavigationBar: Center(
-          //   child: Text('Bottom Bar'),
-          // ),
-          ),
+          backgroundColor: const Color(0xFF181818),
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 40),
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 80,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        const Text(
+                          'Hey, Chan',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Welcome back',
+                          style: TextStyle(
+                              color: Colors.white.withOpacity(0.5),
+                              fontSize: 15),
+                        ),
+                      ],
+                    ),
+                  ],
+                )
+              ],
+            ),
+          )),
     );
   }
 }
