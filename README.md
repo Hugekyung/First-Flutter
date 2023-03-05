@@ -2,15 +2,12 @@
 
 A new Flutter project.
 
-## Getting Started
+## 주요 Widget
 
-This project is a starting point for a Flutter application.
+### Column
 
-A few resources to get you started if this is your first Flutter project:
+- 컨텐츠를 위, 아래로 놓고 싶을 때
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Row
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 컨텐츠를 옆으로 놓고 싶을 때

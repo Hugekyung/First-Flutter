@@ -15,33 +15,48 @@ class App extends StatelessWidget {
       home: Scaffold(
           backgroundColor: const Color(0xFF181818),
           body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 45),
             child: Column(
               children: [
                 const SizedBox(
-                  height: 80,
+                  height: 100,
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  // * 햄버거바, 닉네임 공간 분리를 위한 Row
+                  mainAxisAlignment: MainAxisAlignment.end, // * 가로 방향 정렬
                   children: [
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.end, // * 세로 방향 정렬
                       children: [
                         const Text(
                           'Hey, Chan',
                           style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold),
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         Text(
                           'Welcome back',
                           style: TextStyle(
-                              color: Colors.white.withOpacity(0.5),
-                              fontSize: 15),
+                            color: Colors.white.withOpacity(0.5), // * 투명도
+                            fontSize: 15,
+                          ),
                         ),
                       ],
                     ),
+                    // Column(
+                    //   crossAxisAlignment: CrossAxisAlignment.center,
+                    //   children: [
+                    //     const Text(
+                    //       'Another Column',
+                    //       style: TextStyle(
+                    //         color: Colors.red,
+                    //         fontSize: 10,
+                    //       ),
+                    //     )
+                    //   ],
+                    // )
                   ],
                 )
               ],
