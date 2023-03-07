@@ -17,16 +17,19 @@ class App extends StatelessWidget {
           body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 45),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
                   height: 100,
                 ),
                 Row(
                   // * 햄버거바, 닉네임 공간 분리를 위한 Row
-                  mainAxisAlignment: MainAxisAlignment.end, // * 가로 방향 정렬
+                  mainAxisAlignment:
+                      MainAxisAlignment.end, // * Row 기준 main이 가로, cross가 세로
                   children: [
                     Column(
-                      crossAxisAlignment: CrossAxisAlignment.end, // * 세로 방향 정렬
+                      crossAxisAlignment: CrossAxisAlignment
+                          .end, // * Column 기준 main이 세로, cross가 가로
                       children: [
                         const Text(
                           'Hey, Chan',
@@ -45,20 +48,23 @@ class App extends StatelessWidget {
                         ),
                       ],
                     ),
-                    // Column(
-                    //   crossAxisAlignment: CrossAxisAlignment.center,
-                    //   children: [
-                    //     const Text(
-                    //       'Another Column',
-                    //       style: TextStyle(
-                    //         color: Colors.red,
-                    //         fontSize: 10,
-                    //       ),
-                    //     )
-                    //   ],
-                    // )
                   ],
-                )
+                ),
+                const SizedBox(
+                  height: 120,
+                ),
+                Text(
+                  'Total Balance',
+                  style: TextStyle(
+                      color: Colors.white.withOpacity(0.8), fontSize: 22),
+                ),
+                const Text(
+                  'KRW 50,000',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 44,
+                      fontWeight: FontWeight.w600),
+                ),
               ],
             ),
           )),
