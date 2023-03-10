@@ -58,13 +58,62 @@ class App extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white.withOpacity(0.8), fontSize: 22),
                 ),
+                const SizedBox(
+                  height: 5,
+                ),
                 const Text(
                   'KRW 50,000',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 44,
+                      fontSize: 48,
                       fontWeight: FontWeight.w600),
                 ),
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.circular(45),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 20,
+                          horizontal: 40,
+                        ),
+                        child: Text(
+                          'Transfer',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.lightBlue,
+                        borderRadius: BorderRadius.circular(45),
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 20,
+                          horizontal: 40,
+                        ),
+                        child: Text(
+                          'Transfer',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
           )),
