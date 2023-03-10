@@ -7,6 +7,8 @@ void main() {
 // * Flutter에서 클래스(위젯)를 구현하려면 Flutter-sdk의 core-Widget 3개 중 한가지를 반드시 상속받아야 한다.
 // * 여기서 사용된 StatelessWidget은 단순히 무언가를 화면에 띄워주는 역할만 하는 위젯이다.
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -72,6 +74,7 @@ class App extends StatelessWidget {
                   height: 30,
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
                       decoration: BoxDecoration(
@@ -81,7 +84,7 @@ class App extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 20,
-                          horizontal: 40,
+                          horizontal: 35,
                         ),
                         child: Text(
                           'Transfer',
@@ -102,7 +105,7 @@ class App extends StatelessWidget {
                       child: const Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 20,
-                          horizontal: 40,
+                          horizontal: 35,
                         ),
                         child: Text(
                           'Transfer',
