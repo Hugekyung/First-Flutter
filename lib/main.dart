@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 // * Flutter에서 클래스(위젯)를 구현하려면 Flutter-sdk의 core-Widget 3개 중 한가지를 반드시 상속받아야 한다.
