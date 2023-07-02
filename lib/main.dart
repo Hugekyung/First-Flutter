@@ -42,12 +42,19 @@ class App extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Welcome back',
+                          'Welcome back 👋',
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.5), // * 투명도
                             fontSize: 15,
                           ),
                         ),
+                        const Text(
+                          'Go! My Page 👍',
+                          style: TextStyle(
+                            color: Colors.amberAccent,
+                            fontSize: 15,
+                          ),
+                        )
                       ],
                     ),
                   ],
