@@ -27,11 +27,11 @@ class App extends StatelessWidget {
                 Row(
                   // * 햄버거바, 닉네임 공간 분리를 위한 Row
                   mainAxisAlignment:
-                      MainAxisAlignment.end, // * Row 기준 main이 가로, cross가 세로
+                      MainAxisAlignment.end, // ! Row 기준 main이 가로, cross가 세로
                   children: [
                     Column(
                       crossAxisAlignment: CrossAxisAlignment
-                          .end, // * Column 기준 main이 세로, cross가 가로
+                          .end, // ! Column 기준 main이 세로, cross가 가로
                       children: [
                         const Text(
                           'Hey, Chan',
