@@ -54,32 +54,53 @@ class App extends StatelessWidget {
                             color: Colors.amberAccent,
                             fontSize: 15,
                           ),
-                        )
-                      ],
-                    ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.amber,
-                            borderRadius: BorderRadius.circular(45),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.symmetric(
-                              vertical: 5,
-                              horizontal: 10,
-                            ),
-                            child: Text(
-                              'myPage',
-                              style: TextStyle(
-                                fontSize: 20,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.amber,
+                                borderRadius: BorderRadius.circular(45),
+                              ),
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(
+                                  vertical: 5,
+                                  horizontal: 5,
+                                ),
+                                child: Text(
+                                  'myPage',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                        )
+                            const SizedBox(
+                              width: 5,
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.amber,
+                                borderRadius: BorderRadius.circular(45),
+                              ),
+                              child: const Padding(
+                                padding: EdgeInsets.symmetric(
+                                  vertical: 5,
+                                  horizontal: 5,
+                                ),
+                                child: Text(
+                                  'myPage',
+                                  style: TextStyle(
+                                    fontSize: 10,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
-                    )
+                    ),
                   ],
                 ),
                 const SizedBox(
